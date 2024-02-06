@@ -1,0 +1,95 @@
+.contact {
+  min-height: 700px;
+}
+.text {
+  margin: 120px auto 0;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.hrlin i {
+  text-align: center;
+  color: #2c3e50;
+  margin: 25px 49%;
+  font-size: 20px;
+}
+.hrlin {
+  position: relative;
+}
+.hrlin::before,
+.hrlin::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2c3e50;
+  top: 50%;
+  position: absolute;
+}
+
+.hrlin::before {
+  content: "";
+  left: 42%;
+}
+.hrlin::after {
+  content: "";
+  right: 42%;
+}
+.inpu:focus{
+  outline: none;
+  box-shadow: none;
+}
+label{
+ color: #1abc9c;
+ transition: 0.6s;
+ display: none;
+}
+@media screen and (max-width: 1400px) {
+  .hrlin::before {
+    content: "";
+    left: 40%;
+  }
+  .hrlin::after {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hrlin::before {
+    content: "";
+    left: 35%;
+  }
+  .hrlin::after {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hrlin::before {
+    content: "";
+    left: 30%;
+  }
+  .hrlin::after {
+    right: 30%;
+  }
+  form{
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 475px) {
+  .hrlin::before {
+    content: "";
+    left: 25%;
+  }
+  .hrlin::after {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .hrlin::before {
+    content: "";
+    left: 19%;
+  }
+  .hrlin::after {
+    right: 19%;
+  }
+}

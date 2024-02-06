@@ -1,0 +1,114 @@
+:root {
+  --min-color: #1abc9c;
+}
+.text {
+  margin: 120px 25% 0;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.hrlin i {
+  text-align: center;
+  color: #2c3e50;
+  margin: 25px 49%;
+  font-size: 20px;
+}
+.hrlin {
+  position: relative;
+}
+.hrlin::before,
+.hrlin::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2c3e50;
+  top: 50%;
+  position: absolute;
+}
+
+.hrlin::before {
+  content: "";
+  left: 42%;
+}
+.hrlin::after {
+  content: "";
+  right: 42%;
+}
+@media screen and (max-width: 1400px) {
+  .hrlin::before {
+    content: "";
+    left: 40%;
+  }
+  .hrlin::after {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hrlin::before {
+    content: "";
+    left: 35%;
+  }
+  .hrlin::after {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hrlin::before {
+    content: "";
+    left: 30%;
+  }
+  .hrlin::after {
+    right: 30%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .hrlin::before {
+    content: "";
+    left: 25%;
+  }
+  .hrlin::after {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .hrlin::before {
+    content: "";
+    left: 19%;
+  }
+  .hrlin::after {
+    right: 19%;
+  }
+}
+/* .wrapper{
+  position: relative;
+} */
+.back{
+  position: relative;
+}
+.imge{
+  width: 350px;
+  height: 300px;
+}
+.imge img{
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.middle{
+  position: absolute;
+  top: 0;
+  left: 36px;
+  background-color: #1abc9c;
+  opacity: 0;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.middle:hover{
+  opacity: .8;
+}

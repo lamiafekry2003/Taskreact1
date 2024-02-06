@@ -1,0 +1,100 @@
+.header {
+  background-color: #1abc9c;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  display: block;
+  width: 250px;
+  margin: 120px auto 0;
+}
+
+.header h2 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.hrlin i {
+  text-align: center;
+  color: white;
+  margin: 25px 49%;
+  font-size: 20px;
+}
+.hrlin{
+  position: relative;
+}
+
+.hrlin::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: white;
+    left: 42%;
+    top: 50%;
+    position: absolute;
+}
+.hrlin::after{
+   content: "";
+   display: block;
+   width: 80px;
+   height: 4px;
+   background: white;
+   right:42%;
+   top: 50%;
+   position: absolute;
+}
+.header p {
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 1400px) {
+  .hrlin::before {
+    content: "";
+    left: 40%;
+  }
+  .hrlin::after {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hrlin::before {
+    content: "";
+    left: 35%;
+  }
+  .hrlin::after {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hrlin::before {
+    content: "";
+    left: 30%;
+  }
+  .hrlin::after {
+    right: 30%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .hrlin::before {
+    content: "";
+    left: 25%;
+  }
+  .hrlin::after {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .hrlin::before {
+    content: "";
+    left: 19%;
+  }
+  .hrlin::after {
+    right: 19%;
+  }
+}
